@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Start page settings
+DirectoryIndex projects.html
+
+# Pretty URLs pro stránky
+RewriteRule ^projects$ projects.html [L]
+RewriteRule ^contact$ contact.html [L]

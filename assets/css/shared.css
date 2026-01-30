@@ -1,0 +1,14 @@
+:root{
+  --accent:#38bdf8;
+}
+nav a{position:relative;padding-bottom:4px;transition:all .3s ease}
+nav a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent);transition:width .3s ease;border-radius:1px}
+nav a:hover::after{width:100%}
+nav a:hover{color:#0ea5e9!important}
+#mobile-menu{animation:slideDown .3s ease-out forwards}
+#mobile-menu.hidden{animation:slideUp .3s ease-out forwards;pointer-events:none}
+#mobile-menu-btn{transition:all .3s ease}
+#mobile-menu-btn:hover{transform:rotate(90deg);color:var(--accent)}
+nav a.active{font-weight:700;color:var(--accent)}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px);}to{opacity:1;transform:translateY(0);}}
+@keyframes slideUp{from{opacity:1;transform:translateY(0);}to{opacity:0;transform:translateY(-10px);}}
