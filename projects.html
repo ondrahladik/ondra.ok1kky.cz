@@ -27,24 +27,26 @@
       <div class="flex items-center gap-4 text-sm">
         <span class="text-slate-300">Ondřej Hladík</span>
       </div>
-      
+
       <nav class="hidden md:flex items-center gap-6">
         <a href="projects" class="text-sm text-slate-400">PROJECTS</a>
         <a href="contact" class="text-sm text-slate-400">CONTACT</a>
       </nav>
-      
+
       <span class="hidden md:block text-xs text-slate-500">updated: 2026-03-06</span>
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-white p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-slate-900/95 border-b border-slate-800 p-6 backdrop-blur-sm">
+    <div id="mobile-menu"
+      class="hidden md:hidden absolute top-16 left-0 w-full bg-slate-900/95 border-b border-slate-800 p-6 backdrop-blur-sm">
       <nav class="flex flex-col gap-4">
         <a href="projects" class="text-slate-400 block py-2">PROJECTS</a>
         <a href="contact" class="text-slate-400 block py-2">CONTACT</a>
@@ -56,19 +58,19 @@
   </header>
 
   <script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
     });
 
-    (function(){
+    (function () {
       const links = document.querySelectorAll('nav a');
       links.forEach(a => {
-        try{
+        try {
           const href = new URL(a.href).pathname.split('/').pop();
           const page = location.pathname.split('/').pop() || 'projects';
-          if(href === page) a.classList.add('active');
-        }catch(e){}
+          if (href === page) a.classList.add('active');
+        } catch (e) { }
       });
     })();
   </script>
@@ -82,7 +84,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://bp-mont.cz" target="_blank" class="hover:text-sky-400 transition-colors">bp-mont.cz</a></span>
+            <span class="panel-name"><a href="https://bp-mont.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">bp-mont.cz</a></span>
           </div>
 
           <p class="panel-desc">
@@ -105,7 +108,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://wxmet.cz" target="_blank" class="hover:text-sky-400 transition-colors">wxmet.cz</a></span>
+            <span class="panel-name"><a href="https://wxmet.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">wxmet.cz</a></span>
           </div>
 
           <p class="panel-desc">
@@ -128,7 +132,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://ukuliska.cz" target="_blank" class="hover:text-sky-400 transition-colors">ukuliska.cz</a></span>
+            <span class="panel-name"><a href="https://ukuliska.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">ukuliska.cz</a></span>
           </div>
 
           <p class="panel-desc">
@@ -151,7 +156,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://kpvh98.cz" target="_blank" class="hover:text-sky-400 transition-colors">kpvh98.cz</a></span>
+            <span class="panel-name"><a href="https://kpvh98.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">kpvh98.cz</a></span>
           </div>
 
           <p class="panel-desc">
@@ -172,7 +178,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://amaradio.eu" target="_blank" class="hover:text-sky-400 transition-colors">amaradio.eu</a></span>
+            <span class="panel-name"><a href="https://amaradio.eu" target="_blank"
+                class="hover:text-sky-400 transition-colors">amaradio.eu</a></span>
             <span class="state"><a href="https://github.com/ondrahladik/AmaRadio.eu" target="_blank" rel="noopener"><i
                   class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
@@ -195,7 +202,8 @@
 
         <div class="panel website">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://ok1kky.cz" target="_blank" class="hover:text-sky-400 transition-colors">ok1kky.cz</a></span>
+            <span class="panel-name"><a href="https://ok1kky.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">ok1kky.cz</a></span>
           </div>
 
           <p class="panel-desc">
@@ -221,7 +229,8 @@
 
         <div class="panel webapp">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://serial.ok1kky.cz" target="_blank" class="hover:text-sky-400 transition-colors">Web-Serial-Monitor</a></span>
+            <span class="panel-name"><a href="https://serial.ok1kky.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">Web-Serial-Monitor</a></span>
             <span class="state"><a href="https://github.com/ondrahladik/Web-Serial-Monitor" target="_blank"
                 rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
@@ -267,7 +276,8 @@
 
         <div class="panel webapp">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://cs.ok1kky.cz/loc/cs/" target="_blank" class="hover:text-sky-400 transition-colors">web-gps-locator</a></span>
+            <span class="panel-name"><a href="https://cs.ok1kky.cz/loc/cs/" target="_blank"
+                class="hover:text-sky-400 transition-colors">web-gps-locator</a></span>
             <span class="state"><a href="https://github.com/ondrahladik/web-gps-locator" target="_blank"
                 rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
@@ -289,7 +299,8 @@
 
         <div class="panel webapp">
           <div class="panel-head">
-            <span class="panel-name"><a href="https://aprs.ok1kky.cz" target="_blank" class="hover:text-sky-400 transition-colors">APRS.fi-API-web</a></span>
+            <span class="panel-name"><a href="https://aprs.ok1kky.cz" target="_blank"
+                class="hover:text-sky-400 transition-colors">APRS.fi-API-web</a></span>
             <span class="state"><a href="https://github.com/ondrahladik/APRS.fi-API-web" target="_blank"
                 rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
@@ -313,13 +324,34 @@
       </div>
     </section>
 
-    <!-- <section>
+    <section>
       <h2 class="panel-title">SERVEROVÉ APLIKACE</h2>
 
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
+        <div class="panel server">
+          <div class="panel-head">
+            <span class="panel-name">pistar-control</span>
+            <span class="state"><a href="https://github.com/ondrahladik/pistar-control" target="_blank"
+                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
+          </div>
+
+          <p class="panel-desc">
+            Ovládání Pi-Star hotspotu přes API s webovým rozhraním, Telegram botem a MQTT.
+          </p>
+
+          <div class="panel-tech">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+
+          <div class="panel-meta">
+            <span>since 2026</span>
+          </div>
+        </div>
+
       </div>
-    </section> -->
+    </section>
 
     <section>
       <h2 class="panel-title">EMBEDDED & IOT</h2>
@@ -369,8 +401,8 @@
         <div class="panel embedded">
           <div class="panel-head">
             <span class="panel-name">WX-Display</span>
-            <span class="state"><a href="https://github.com/ondrahladik/WX-Display" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
+            <span class="state"><a href="https://github.com/ondrahladik/WX-Display" target="_blank" rel="noopener"><i
+                  class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
 
           <p class="panel-desc">
@@ -389,8 +421,8 @@
         <div class="panel embedded">
           <div class="panel-head">
             <span class="panel-name">WX-Station</span>
-            <span class="state"><a href="https://github.com/ondrahladik/WX-Station" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
+            <span class="state"><a href="https://github.com/ondrahladik/WX-Station" target="_blank" rel="noopener"><i
+                  class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
 
           <p class="panel-desc">
@@ -429,8 +461,8 @@
         <div class="panel embedded">
           <div class="panel-head">
             <span class="panel-name">Relay-Reset</span>
-            <span class="state"><a href="https://github.com/ondrahladik/Relay-Reset" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
+            <span class="state"><a href="https://github.com/ondrahladik/Relay-Reset" target="_blank" rel="noopener"><i
+                  class="devicon-github-original"></i> OPENSOURCE</a></span>
           </div>
 
           <p class="panel-desc">

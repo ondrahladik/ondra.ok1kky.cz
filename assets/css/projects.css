@@ -17,6 +17,7 @@ body{min-height:100%;background-color:var(--bg);background-image:radial-gradient
 .panel:hover::before{width:4px}
 .panel.website::before{background:#22c55e}
 .panel.webapp::before{background:#38bdf8}
+.panel.server::before{background:#fa1515}
 .panel.embedded::before{background:#facc15}
 .panel-head{display:flex;justify-content:space-between;align-items:center}
 .panel-name{font-weight:600}
