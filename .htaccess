@@ -1,8 +1,10 @@
 RewriteEngine On
 
-# Start page settings
+RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"' [OR]
+RewriteCond %{HTTP_HOST} !^ondra.ok1kky\.cz$ [NC]
+RewriteRule ^(.*)$ https://ondra.ok1kky.cz/$1 [R=301,L]
+
 DirectoryIndex projects.html
 
-# Pretty URLs pro stránky
 RewriteRule ^projects$ projects.html [L]
 RewriteRule ^contact$ contact.html [L]
