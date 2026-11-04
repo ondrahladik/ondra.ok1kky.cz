@@ -1,10 +1,7 @@
 RewriteEngine On
 
-RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"' [OR]
-RewriteCond %{HTTP_HOST} !^ondra.ok1kky\.cz$ [NC]
-RewriteRule ^(.*)$ https://ondra.ok1kky.cz/$1 [R=301,L]
-
 DirectoryIndex projects.html
 
 RewriteRule ^projects$ projects.html [L]
+RewriteRule ^showcase$ showcase.html [L]
 RewriteRule ^contact$ contact.html [L]

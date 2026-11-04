@@ -1,0 +1,101 @@
+:root {
+  --bg: #020617;
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+  --muted: rgb(148 163 184);
+  --card-bg: rgba(2, 6, 23, .9);
+  --card-border: rgb(30 41 59);
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at 15% 10%, rgba(56, 189, 248, .08), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(34, 197, 94, .06), transparent 45%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-eyebrow {
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .4);
+}
+
+.portfolio-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.portfolio-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  background: #0f172a;
+  transition: transform .35s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.025);
+}
+
+.portfolio-caption {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: 1rem 1.125rem 1.125rem;
+}
+
+.portfolio-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.portfolio-type {
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

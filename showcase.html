@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Ondra Hladík" />
+  <link rel="manifest" href="assets/img/site.webmanifest" />
+
+  <title>Showcase</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/showcase.css">
+  <link rel="stylesheet" href="assets/css/shared.css">
+</head>
+
+<body class="text-slate-200 font-mono min-h-full flex flex-col">
+
+  <header class="border-b border-slate-800 relative z-50 bg-[#020617]/80 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-4 text-sm">
+        <span class="text-slate-300">Ondřej Hladík</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="projects" class="text-sm text-slate-400">PROJECTS</a>
+        <a href="showcase" class="text-sm text-slate-400">SHOWCASE</a>
+        <a href="contact" class="text-sm text-slate-400">CONTACT</a>
+      </nav>
+
+      <span class="hidden md:block text-xs text-slate-500">webové projekty</span>
+
+      <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-white p-2" aria-label="Otevřít navigaci"
+        aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu"
+      class="hidden md:hidden absolute top-16 left-0 w-full bg-slate-900/95 border-b border-slate-800 p-6 backdrop-blur-sm">
+      <nav class="flex flex-col gap-4">
+        <a href="projects" class="text-slate-400 block py-2">PROJECTS</a>
+        <a href="showcase" class="text-slate-400 block py-2">SHOWCASE</a>
+        <a href="contact" class="text-slate-400 block py-2">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const menuButton = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', function () {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('nav a').forEach(function (link) {
+      const href = new URL(link.href).pathname.split('/').pop();
+      const page = location.pathname.split('/').pop() || 'showcase';
+      if (href === page) link.classList.add('active');
+    });
+  </script>
+
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full">
+    <div class="mb-12">
+      <p class="text-slate-400 text-base">Ukázky webových projektů. Kliknutím na náhled otevřete příslušný web.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <a class="portfolio-card" href="https://www.csolpardubice.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/csolpardubice.cz.png" alt="Náhled webu Jednoty ČsOL Pardubice" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">csolpardubice.cz</span>
+          <span class="portfolio-type">Webová prezentace</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://bp-mont.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/bp-mont.cz.png" alt="Náhled webu BP-MONT" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">bp-mont.cz</span>
+          <span class="portfolio-type">Webová prezentace</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://wxmet.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/wxmet.cz.png" alt="Náhled platformy WXMET" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">wxmet.cz</span>
+          <span class="portfolio-type">Počasí a meteorologická data</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://ukuliska.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/ukuliska.cz.png" alt="Náhled webu Ubytování U Kuliška" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">ukuliska.cz</span>
+          <span class="portfolio-type">Ubytování v Krkonoších</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://kpvh98.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/kpvh98.cz.png" alt="Náhled webu Klubu přátel vojenské historie 98" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">kpvh98.cz</span>
+          <span class="portfolio-type">Web spolku</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://amaradio.eu" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/amaradio.eu.png" alt="Náhled webu AmaRadio.eu" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">amaradio.eu</span>
+          <span class="portfolio-type">Nástroje pro radioamatéry</span>
+        </span>
+      </a>
+
+      <a class="portfolio-card" href="https://www.ok1kky.cz" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/showcase/ok1kky.cz.png" alt="Náhled webu klubové stanice OK1KKY" loading="lazy">
+        <span class="portfolio-caption">
+          <span class="portfolio-name">ok1kky.cz</span>
+          <span class="portfolio-type">Web klubové stanice</span>
+        </span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="text-xs text-slate-500 px-6 py-8 border-t border-slate-800 text-center">
+    <p>© 2026 Ondra Hladík</p>
+  </footer>
+
+</body>
+
+</html>
