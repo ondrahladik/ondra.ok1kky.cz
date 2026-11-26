@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/css/shared.css">
 </head>
 
-<body class="text-slate-200 font-mono min-h-full flex flex-col">
+<body class="text-slate-200 font-mono min-h-screen flex flex-col">
 
   <!-- TOP BAR -->
   <header class="border-b border-slate-800 relative z-50 bg-[#020617]/80 backdrop-blur-sm">
@@ -182,14 +182,16 @@
       .then(function (config) {
         applyGlobalConfig(config);
         renderProjects(config);
+        document.getElementById('site-footer').classList.replace('invisible', 'visible');
       })
       .catch(function (error) {
         console.error('Unable to load project configuration:', error);
         projectsContent.textContent = 'Projekty se nepodařilo načíst.';
+        document.getElementById('site-footer').classList.replace('invisible', 'visible');
       });
   </script>
 
-  <footer class="text-xs text-slate-500 px-6 py-8 border-t border-slate-800 text-center">
+  <footer id="site-footer" class="invisible mt-auto text-xs text-slate-500 px-6 py-8 border-t border-slate-800 text-center">
     <p>© 2026 Ondra Hladík</p>
   </footer>
 
