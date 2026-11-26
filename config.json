@@ -31,7 +31,7 @@
     {
       "title": "MOBILNÍ APLIKACE",
       "projects": [
-        {"name": "WXMET.CZ","description": "--------------------------------------------------------------------------------","state": {"url": "https://play.google.com/store/apps/details?id=cz.wxmet.app","label": "Google Play","iconClass": "devicon-google-plain"},"technologies": [{"className": "devicon-qt-plain colored"},{"className": "devicon-cplusplus-plain colored"},{"className": "devicon-java-plain colored"}],"since": 2026,"type": "mobile","active": false}
+        {"name": "WXMET.CZ","description": "Mobilní aplikace pro sledování aktuálních meteo dat ze sítě stanic WXMET.","state": {"url": "https://play.google.com/store/apps/details?id=cz.wxmet.app","label": "Google Play","iconClass": "devicon-google-plain"},"technologies": [{"className": "devicon-qt-plain colored"},{"className": "devicon-cplusplus-plain colored"},{"className": "devicon-java-plain colored"}],"since": 2026,"type": "mobile","active": true}
       ]
     },
     {
