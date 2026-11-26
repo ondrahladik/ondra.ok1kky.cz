@@ -34,7 +34,7 @@
         <a href="contact" class="text-sm text-slate-400">CONTACT</a>
       </nav>
 
-      <span class="hidden md:block text-xs text-slate-500">updated: 2026-11-04</span>
+      <span class="hidden md:block text-xs text-slate-500" data-global="last-update"></span>
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-white p-2">
@@ -54,7 +54,7 @@
         <a href="contact" class="text-slate-400 block py-2">CONTACT</a>
       </nav>
       <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-500">
-        updated: 2026-11-04
+        <span data-global="last-update"></span>
       </div>
     </div>
   </header>
@@ -77,562 +77,117 @@
     })();
   </script>
 
-  <main class="flex-grow max-w-7xl mx-auto px-6 py-16 space-y-20 w-full">
-
-    <section>
-      <h2 class="panel-title">WEBOVÉ STRÁNKY</h2>
-
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://www.ok1kky.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">ok1kky.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Oficiální web klubové stanice OK1KKY s přehledem provozu a aktivit.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-tailwindcss-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://www.csolpardubice.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">csolpardubice.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová prezentace Jednoty ČsOL Pardubice poskytuje aktuální informace a novinky.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-wordpress-plain"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://bp-mont.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">bp-mont.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová prezentace firmy specializující se na montáž a servis bran, vrat a plotů.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://wxmet.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">wxmet.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Otevřená cloudová platforma pro sběr a vizualizaci dat z WX stanic.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://ukuliska.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">ukuliska.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová prezentace ubytování v Krkonoších s nabídkou pokojů a informacemi.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://kpvh98.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">kpvh98.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová prezentace spolku věnujícího se vojenské historii a reenactmentu.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://amaradio.eu" target="_blank"
-                class="hover:text-sky-400 transition-colors">amaradio.eu</a></span>
-            <span class="state"><a href="https://github.com/ondrahladik/AmaRadio.eu" target="_blank" rel="noopener"><i
-                  class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webové nástroje pro radioamatéry včetně práce s volacími znaky, lokátory a mapami.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2024</span>
-          </div>
-        </div>
-
-        <div class="panel website">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://web.archive.org/web/20260317174505/https://www.ok1kky.cz/" target="_blank"
-                class="hover:text-sky-400 transition-colors">ok1kky.cz</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Oficiální web klubové stanice OK1KKY s přehledem provozu a aktivit.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-wordpress-plain"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2022</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2 class="panel-title">WEBOVÉ APLIKACE</h2>
-
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name">MailAPI</span>
-            <span class="state"><a href="https://github.com/ondrahladik/MailAPI" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            REST API pro centralizované odesílání e-mailů z vlastních aplikací.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://jota.ok1kky.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">jota-joti-logbook</a></span>
-            <span class="state"><a href="https://github.com/ondrahladik/jota-joti-logbook" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová aplikace pro zapisování navázaných spojení během skautské akce JOTA-JOTI.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://serial.ok1kky.cz" target="_blank"
-                class="hover:text-sky-400 transition-colors">Web-Serial-Monitor</a></span>
-            <span class="state"><a href="https://github.com/ondrahladik/Web-Serial-Monitor" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webový sériový monitor využívající Web Serial API pro komunikaci s USB zařízeními.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name">Relay-Reset-Web</span>
-            <span class="state"><a href="https://github.com/ondrahladik/Relay-Reset-Web" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webové MQTT rozhraní pro ovládání reléového resetu na Raspberry Pi.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name">web-gps-locator</span>
-            <span class="state"><a href="https://github.com/ondrahladik/web-gps-locator" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Webová aplikace pro zobrazení GPS polohy, výpočet lokátoru a zobrazení na mapě.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel webapp">
-          <div class="panel-head">
-            <span class="panel-name"><a href="https://www.ok1kky.cz/aprs/mapa" target="_blank"
-                class="hover:text-sky-400 transition-colors">APRS.fi-API-web</a></span>
-            <span class="state"><a href="https://github.com/ondrahladik/APRS.fi-API-web" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Aplikace zobrazuje vybrané stanice přes API z APRS.fi do tabulky a mapy.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2024</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2 class="panel-title">SERVEROVÉ APLIKACE</h2>
-
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-
-        <div class="panel server">
-          <div class="panel-head">
-            <span class="panel-name">cluster2sql</span>
-            <span class="state"><a href="https://github.com/ondrahladik/cluster2sql" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Jednoduchá aplikace pro připojení k DX Clusteru a archivaci zpráv do databáze.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-python-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel server">
-          <div class="panel-head">
-            <span class="panel-name">mqtt2sql</span>
-            <span class="state"><a href="https://github.com/ondrahladik/mqtt2sql" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Ukládání MQTT zpráv do MySQL/MariaDB s webovým rozhraním pro správu.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-python-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel server">
-          <div class="panel-head">
-            <span class="panel-name">pistar-control</span>
-            <span class="state"><a href="https://github.com/ondrahladik/pistar-control" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Ovládání Pi-Star hotspotu přes API s webovým rozhraním, Telegram botem a MQTT.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-python-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2 class="panel-title">EMBEDDED & IOT</h2>
-
-      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">cw-qso-simulator</span>
-            <span class="state"><a href="https://github.com/ondrahladik/cw-qso-simulator" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Simulace skutečného CW (morse) spojení mezi dvěma radioamatérskými stanicemi.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-arduino-plain-wordmark colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">Nano-Barometer</span>
-            <span class="state"><a href="https://github.com/ondrahladik/Nano-Barometer" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Jednoduchý digitální barometr se senzorem BMP280 pro Arduino Nano.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-arduino-plain-wordmark colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">WX-Display</span>
-            <span class="state"><a href="https://github.com/ondrahladik/WX-Display" target="_blank" rel="noopener"><i
-                  class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            ESP8266 displej pro zobrazení dat z WX stanic pomocí MQTT.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-arduino-plain-wordmark colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2026</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">WX-Station</span>
-            <span class="state"><a href="https://github.com/ondrahladik/WX-Station" target="_blank" rel="noopener"><i
-                  class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            ESP32 WX stanice s odesíláním dat do APRS-IS, MQTT a databáze přes HTTP GET.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-arduino-plain-wordmark colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">Internet-Radio</span>
-            <span class="state"><a href="https://github.com/ondrahladik/Internet-Radio" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Internetové rádio běžící na Raspberry Pi s LCD displejem a hardwarovým ovládáním.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-python-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">Relay-Reset</span>
-            <span class="state"><a href="https://github.com/ondrahladik/Relay-Reset" target="_blank" rel="noopener"><i
-                  class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            Reset zařízení pomocí relé s podporou MQTT, běžící na Raspberry Pi.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-python-plain colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2025</span>
-          </div>
-        </div>
-
-        <div class="panel embedded">
-          <div class="panel-head">
-            <span class="panel-name">APRS-WX-Station</span>
-            <span class="state"><a href="https://github.com/ondrahladik/APRS-WX-Station" target="_blank"
-                rel="noopener"><i class="devicon-github-original"></i> OPENSOURCE</a></span>
-          </div>
-
-          <p class="panel-desc">
-            ESP8266 WX stanice s odesíláním dat do APRS-IS, MQTT a databáze přes HTTP GET.
-          </p>
-
-          <div class="panel-tech">
-            <i class="devicon-arduino-plain-wordmark colored"></i>
-          </div>
-
-          <div class="panel-meta">
-            <span>since 2024</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-16 space-y-20 w-full" id="projects-content"></main>
+
+  <script>
+    const projectsContent = document.getElementById('projects-content');
+
+    function createLink(text, url, className) {
+      if (!url) {
+        const element = document.createElement('span');
+        element.textContent = text;
+        element.className = className;
+        return element;
+      }
+
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = text;
+      link.className = className;
+      return link;
+    }
+
+    function renderProject(project) {
+      const panel = document.createElement('div');
+      panel.className = `panel ${project.type}`;
+
+      const head = document.createElement('div');
+      head.className = 'panel-head';
+      const name = createLink(project.name, project.url, 'panel-name');
+      if (project.url) name.classList.add('hover:text-sky-400', 'transition-colors');
+      head.appendChild(name);
+
+      if (project.state) {
+        const state = document.createElement('span');
+        state.className = 'state';
+        const stateLink = createLink(project.state.label, project.state.url, '');
+        const icon = document.createElement('i');
+        icon.className = project.state.iconClass;
+        stateLink.prepend(icon);
+        state.appendChild(stateLink);
+        head.appendChild(state);
+      }
+      panel.appendChild(head);
+
+      const description = document.createElement('p');
+      description.className = 'panel-desc';
+      description.textContent = project.description;
+      panel.appendChild(description);
+
+      const technologies = document.createElement('div');
+      technologies.className = 'panel-tech';
+      project.technologies.forEach(function (technology) {
+        const icon = document.createElement('i');
+        icon.className = technology.className;
+        technologies.appendChild(icon);
+      });
+      panel.appendChild(technologies);
+
+      const meta = document.createElement('div');
+      meta.className = 'panel-meta';
+      const since = document.createElement('span');
+      since.textContent = `since ${project.since}`;
+      meta.appendChild(since);
+      panel.appendChild(meta);
+
+      return panel;
+    }
+
+    function applyGlobalConfig(config) {
+      document.querySelectorAll('[data-global="last-update"]').forEach(function (element) {
+        element.textContent = `updated: ${config.global.lastUpdate}`;
+      });
+    }
+
+    function renderProjects(config) {
+      config.categories.forEach(function (category) {
+        const activeProjects = category.projects.filter(function (project) {
+          return project.active;
+        });
+        if (!activeProjects.length) return;
+
+        const section = document.createElement('section');
+        const title = document.createElement('h2');
+        title.className = 'panel-title';
+        title.textContent = category.title;
+        section.appendChild(title);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid gap-6 md:grid-cols-2 xl:grid-cols-3';
+        activeProjects.forEach(function (project) {
+          grid.appendChild(renderProject(project));
+        });
+        section.appendChild(grid);
+        projectsContent.appendChild(section);
+      });
+    }
+
+    fetch('config.json')
+      .then(function (response) {
+        if (!response.ok) throw new Error(`config.json returned ${response.status}`);
+        return response.json();
+      })
+      .then(function (config) {
+        applyGlobalConfig(config);
+        renderProjects(config);
+      })
+      .catch(function (error) {
+        console.error('Unable to load project configuration:', error);
+        projectsContent.textContent = 'Projekty se nepodařilo načíst.';
+      });
+  </script>
 
   <footer class="text-xs text-slate-500 px-6 py-8 border-t border-slate-800 text-center">
     <p>© 2026 Ondra Hladík</p>
